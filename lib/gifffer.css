@@ -1,0 +1,53 @@
+.gifffer-container {
+    padding: 0;
+    border: none;
+}
+.gifffer-container canvas{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    cursor:pointer;
+}
+.gifffer-container img {
+    z-index:1;
+}
+.gifffer-container .gifffer-play-button{
+    z-index:3;
+}
+.gifffer-play-button{
+    background-color:rgba(20,20,20,0.6);
+    width:60px;
+    height:60px;
+    position:absolute;
+    border-radius:30px;
+    top:50%;
+    left:50%;
+    margin:-30px;
+    cursor:pointer;
+}
+.gifffer-play-button:before{
+    border:14px solid transparent;
+    top:16px;
+    left:25px;
+    border-right-color:transparent;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-right:0
+}
+.gifffer-play-button:after,
+.gifffer-play-button:before{
+    content:"";
+    position:absolute;
+    height:0;
+}
+.gifffer-play-button:after{
+    border:14px solid #000;
+    top:15px;left:24px;
+    border-right-color:transparent;
+    border-top-color:transparent;
+    border-bottom-color:transparent;
+    border-right:0;
+}
